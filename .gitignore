@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# JetBrains (PyCharm, CLion)
+.idea/
+
+# C++ / CLion
+cmake-build-*/
+*.o
+*.out
+*.exe
+a.out
+
+# macOS
+.DS_Store
