@@ -19,7 +19,7 @@ for i in range(len(nums)):
             c = nums[i]
             nums.remove(nums[i])
             a = i
-            b = nums.index(c)
+            b = nums.index(c + 1)
     if (target- nums[i]) in nums:
         a = nums.index(target- nums[i])
         b = i
