@@ -12,6 +12,14 @@ ex_nums = []
 
 for i in range(len(nums)):
     ex_nums.append(target - nums[i])
+    if ((target - nums[i]) == nums[i]):
+        if nums.count(nums[i]) == 1:
+            continue
+        else:
+            c = nums[i]
+            nums.remove(nums[i])
+            a = i
+            b = nums.index(c)
     if (target- nums[i]) in nums:
         a = nums.index(target- nums[i])
         b = i
