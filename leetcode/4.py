@@ -21,7 +21,6 @@ med = len(nums) // 2
 if len(nums) % 2 == 0:
     b = (nums[med] + nums[med - 1])/2
 else:
-    med = int(med) + 1
-    b = nums[med - 1]
+    b = nums[med]
 
 print(b)
