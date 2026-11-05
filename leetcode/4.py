@@ -17,7 +17,7 @@ for i in nums2:
 
 nums.sort()
 
-med = len(nums) / 2
+med = len(nums) // 2
 if len(nums) % 2 == 0:
     b = (nums[med] + nums[med - 1])/2
 else:
