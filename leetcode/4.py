@@ -17,10 +17,11 @@ for i in nums2:
 
 nums.sort()
 
-a = len(nums) / 2
-if a % 1 == 0:
-    b = (nums[a] + nums[a + 1]) / 2
+med = len(nums) / 2
+if len(nums) % 2 == 0:
+    b = (nums[med] + nums[med - 1])/2
 else:
-    b = nums[int(a - 0.5)]
+    med = int(med) + 1
+    b = nums[med - 1]
 
 print(b)
